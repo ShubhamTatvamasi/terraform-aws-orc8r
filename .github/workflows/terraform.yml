@@ -13,6 +13,9 @@ jobs:
     - name: Start localstack
       run: docker run -d -p 4566:4566 -p 4571:4571 localstack/localstack
 
+    - name: Move to localstack example
+      run: cd examples/localstack
+
     - name: Initialize
       run: terraform init
 
