@@ -13,7 +13,7 @@ jobs:
     - name: Start localstack
       run: docker run -d -p 4566:4566 -p 4571:4571 localstack/localstack
 
-    - name: Remove provider.tf
+    - name: Remove providers.tf
       run: rm providers.tf
 
     - name: Update localstack provider.tf
